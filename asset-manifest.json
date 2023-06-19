@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pizzacalc/static/css/main.55fccb84.css",
-    "main.js": "/pizzacalc/static/js/main.0545f017.js",
-    "static/js/787.9d813c43.chunk.js": "/pizzacalc/static/js/787.9d813c43.chunk.js",
-    "index.html": "/pizzacalc/index.html",
-    "main.55fccb84.css.map": "/pizzacalc/static/css/main.55fccb84.css.map",
-    "main.0545f017.js.map": "/pizzacalc/static/js/main.0545f017.js.map",
-    "787.9d813c43.chunk.js.map": "/pizzacalc/static/js/787.9d813c43.chunk.js.map"
+    "main.css": "/PizzaCalc/static/css/main.55fccb84.css",
+    "main.js": "/PizzaCalc/static/js/main.db41fb48.js",
+    "static/js/787.9d813c43.chunk.js": "/PizzaCalc/static/js/787.9d813c43.chunk.js",
+    "index.html": "/PizzaCalc/index.html",
+    "main.55fccb84.css.map": "/PizzaCalc/static/css/main.55fccb84.css.map",
+    "main.db41fb48.js.map": "/PizzaCalc/static/js/main.db41fb48.js.map",
+    "787.9d813c43.chunk.js.map": "/PizzaCalc/static/js/787.9d813c43.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55fccb84.css",
-    "static/js/main.0545f017.js"
+    "static/js/main.db41fb48.js"
   ]
 }
