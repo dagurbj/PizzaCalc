@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import RangeSlider from 'react-bootstrap-range-slider';
+import useLocalStorageState from 'use-local-storage-state';
 
 const App = () => {
-  const [numberOfPizzas, setNumberOfPizzas] = useState(4);
+  const [numberOfPizzas, setNumberOfPizzas] = useLocalStorageState('numberOfPizzas', {defaultValue: 4});
 
-  const [ballSize, setBallSize] = useState(250);
+  const [ballSize, setBallSize] = useLocalStorageState('ballSize', {defaultValue: 250});
+  
+  const [saltPct, setSaltPct] = useLocalStorageState('saltPct', {defaultValue: 2.0});
 
-  const [saltPct, setSaltPct] = useState(2.0);
+  const [hydration, setHydration] = useLocalStorageState('hydration', {defaultValue: 67});
 
-  const [hydration, setHydration] = useState(67);
-
-  const [levain, setLevain] = useState(10);
+  const [levain, setLevain] = useLocalStorageState('levain', {defaultValue: 10});
 
   const gramsFlour = numberOfPizzas * (ballSize - ballSize * levain / 100) / (saltPct / 100 + hydration / 100 + 1);
   const gramsLevain = -(2 * gramsFlour * levain / 100) / (levain / 100 - 1);
   const gramsWater = gramsFlour * hydration / 100 + 0.5 * (-(2 * gramsFlour * levain / 100) / (levain / 100 - 1)) * (hydration / 100 - 1);
   const gramsSalt = saltPct / 100 * (gramsFlour + (- (2 * gramsFlour * levain / 100) / (levain / 100 - 1)) / 2);
-    
+
   return (
     <div className="App">
       <div class="container">
@@ -33,8 +34,6 @@ const App = () => {
         {getIngredientRow("Salt", gramsSalt)}
       </div>
     </div>
-
-
   );
 
   function getSlider(ingredientName, value, setValueFunc, variant, limits, step = 1, unit = '%') {
@@ -47,6 +46,7 @@ const App = () => {
           step={step}
           variant={variant}
           value={value}
+          tooltip='off'
           onChange={changeEvent => setValueFunc(changeEvent.target.value)} />
       </div>
     </div>;
