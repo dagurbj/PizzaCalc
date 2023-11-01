@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import RangeSlider from 'react-bootstrap-range-slider';
 import useLocalStorageState from 'use-local-storage-state';
 
