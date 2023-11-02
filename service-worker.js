@@ -4,8 +4,8 @@ self.addEventListener('install', (event) => {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/static/css/main.css',
-                '/static/js/main.js',
+                '/static/css/main.2d8189c2.css',
+                '/static/js/main.0d04e169.js'
                 // Add other assets you want to cache
             ]);
         })
