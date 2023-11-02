@@ -21,5 +21,13 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "id": "95bde8a5-9786-431f-993c-b08ee4e8bf45",
+  "description": "Your sourdough pizza calculator!",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "categories": [
+    "food"
+  ]
 }
